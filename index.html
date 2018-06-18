@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meal Plan</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="./prod/css/style.min.css">
+    <script defer src="./prod/js/script.js"></script>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__container">
+            <nav class="nav__main">
+                <ul>
+                    <li><a href="#" class="nav__logo"></a></li>
+                    <li><a href="#" class="nav__active">dashboars</a></li>
+                    <li><a href="#">recipes</a></li>
+                    <li><a href="#">challenge</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav__personal">
+                <ul>
+                    <li><a href="#" class="nav__face"><img src="img/nav-face.png" alt="face icon"></a></li>
+                    <li><a href="#" class="nav__name">Olivia Wilde</a></li>
+                    <li><a href="#" class="nav__submenu"><i class="fas fa-angle-down"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- MEAL PLAN - -->
+    <main class="plan">
+        <div class="plan__container">
+            <header class="plan__header">
+                <div class="plan__progress">
+                    <h5 class="plan__progress--header">your 12 week progress</h5>
+                    <ul>
+                        <li class="plan__progress--week plan__progress--first-week">1&nbsp;</li>
+                        <li class="plan__progress--week">2&nbsp;</li>
+                        <li class="plan__progress--week">3&nbsp;</li>
+                        <li class="plan__progress--week">4&nbsp;</li>
+                        <li class="plan__progress--week">5&nbsp;</li>
+                        <li class="plan__progress--week">6&nbsp;</li>
+                        <li class="plan__progress--week">7&nbsp;</li>
+                        <li class="plan__progress--week">8&nbsp;</li>
+                        <li class="plan__progress--week">9&nbsp;</li>
+                        <li class="plan__progress--week">10</li>
+                        <li class="plan__progress--week">11</li>
+                        <li class="plan__progress--week">12</li>
+                    </ul>
+                </div>
+
+                <div class="plan__week-info">
+                    <button class="plan__button plan__button--prev">
+                        <img src="img/prevWeek.png" alt="previous week arrow">
+                    </button>
+
+                    <h4 class="plan__week-nr"><span>Week <span class='plan__week-nr--active'>7</span></span></h4>
+
+                    <button class="plan__button plan__button--next">
+                            <img src="img/nextWeek.png" alt="next week arrow">
+                    </button>
+                </div>
+
+                <div class="plan__options">
+                    <h5 class="plan__options--header">select your protein options</h5>
+                    <ul>
+                        <li class="plan__options--veg">
+                            <button class="plan__options--button">
+                                <img src="img/iconVegYES.png" alt="vegetables yes ">
+                            </button>
+                        </li>
+
+                        <li class="paln__options--chees">
+                            <button class="plan__options--button">
+                                <img src="img/iconCheesYES.png" alt="chees yes">
+                            </button>
+                        </li>
+
+                        <li class="plan__optinos--meet">
+                            <button class="plan__options--button">
+                                <img src="img/iconMeetYES.png" alt="meet yes">
+                            </button>
+                        </li>
+
+                        <li class="plan__optinos--fish">
+                            <button class="plan__options--button">
+                                <img src="img/iconFishNO.png" alt="fish no">
+                            </button>
+                        </li>
+
+                        <li class="plan__optinos--poultry">
+                            <button class="plan__options--button">
+                                <img src="img/iconPoultryNO.png" alt="poultry no">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+<!--  -->
+            <!-- start - 1st row -->
+            <div class="plan__table-container">
+                <table class="plan__table">
+                    <tr >
+                        <td rowspan="2" class="plan__table--06am">
+                            <span Class="hour">6:00</span>
+                            <span class="light">AM</span>
+                        </td>
+
+                        <td class="plan__table--header plan__table--header-monday">
+                            day&nbsp;<span class="plan__table--day-nr"></span>
+                        </td>
+
+                        <td class="plan__table--header plan__table--header-tuesday">
+                            day&nbsp; <span class="plan__table--day-nr"></span>
+                        </td>
+
+                        <td class="plan__table--header plan__table--header-wednesday">
+                            day&nbsp;<span class="plan__table--day-nr"></span>
+                        </td>
+
+                        <td class="plan__table--header plan__table--header-thursday">
+                            day&nbsp;<span class="plan__table--day-nr"></span>
+                        </td>
+
+                        <td class="plan__table--header plan__table--header-friday">
+                            day&nbsp; <span class="plan__table--day-nr"></span>
+                        </td>
+
+                        <td class="plan__table--header plan__table--header-saturday">
+                            day&nbsp;<span class="plan__table--day-nr"></span>
+                        </td>
+
+                        <td class="plan__table--header plan__table--header-sunday">
+                            day&nbsp;<span class="plan__table--day-nr"></span>
+                        </td>
+                    </tr>
+                    <!-- end - 1st row -->
+<!--  -->
+                    <!-- start - 2nd row -->
+                    <tr>
+                        <td class="plan__table--meal plan__table--monday06am">
+                            <span class="plan__table--meal-text">
+                                    Bod<span class="dot">•</span>ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark" style="display: block">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--tuesday06am">
+                            <span class="plan__table--meal-text">
+                                    Bod<span class="dot">•</span>ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+
+                        </td>
+
+                        <td class="plan__table--meal plan__table--wednesday06am">
+                            <span class="plan__table--meal-text">
+                                    Bod<span class="dot">•</span>ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--thursday06am">
+                            <span class="plan__table--meal-text">
+                                    Bod<span class="dot">•</span>ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--friday06am">
+                            <span class="plan__table--meal-text">
+                                    Bod<span class="dot">•</span>ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--saturday06am">
+                            <span class="plan__table--meal-text">
+                                    Bod<span class="dot">•</span>ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+
+                        </td>
+
+                        <td rowspan="5" class="plan__table--meal plan__table--sunday">
+
+                        </td>
+                    </tr>
+                    <!-- end - 2nd row -->
+<!--  -->
+                    <!-- start - 3rd row -->
+                    <tr>
+                        <td class="plan__table--09am">
+                            <span Class="hour">9:00</span>
+                            <span class="light">AM</span>
+                        </td>
+                        <td class="plan__table--meal plan__table--monday09am">
+                            <span class="plan__table--meal-text">
+                                Ham and <br/> Swiss Roll Ups
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark" style="display: block">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--tuesday09am">
+                            <span class="plan__table--meal-text">
+                                Ham and Swiss Soll Ups
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+
+                        </td>
+
+                        <td class="plan__table--meal plan__table--wednesday09am">
+                            <span class="plan__table--meal-text">
+                                Grilled Steak (HC)
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--thursday09am">
+                            <span class="plan__table--meal-text">
+                                Ham and Swiss Roll Ups
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--friday09am">
+                            <span class="plan__table--meal-text">
+                                Ham and Swiss Roll Ups
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--saturday09am">
+                            <span class="plan__table--meal-text">
+                                Grilled Steak (HC)
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+                    </tr>
+                    <!-- end - 3rd row -->
+<!--  -->
+                        <!-- start - 4th row -->
+                    <tr>
+                        <td class="plan__table--12am">
+                            <span class="hour">12:00</span>
+                            <span class="light">AM</span>
+                        </td>
+                        <td class="plan__table--meal plan__table--monday12am">
+                            <span class="plan__table--meal-text">
+                                Turkey Melt
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark" style="display: block">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--tuesday12am">
+                            <span class="plan__table--meal-text">
+                                Turkey Melt
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+
+                        </td>
+
+                        <td class="plan__table--meal plan__table--wednesday12am">
+                            <span class="plan__table--meal-text">
+                                    Bod•ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--thursday12am">
+                            <span class="plan__table--meal-text">
+                                Turkey Melt
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--friday12am">
+                            <span class="plan__table--meal-text">
+                                Bod•ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--saturday12am">
+                            <span class="plan__table--meal-text">
+                                Bod•ē Shake
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+                    </tr>
+                    <!-- end - 4th row -->
+<!-- -->
+                    <!-- start - 5th row     -->
+                    <tr>
+                        <td class="plan__table--03pm">
+                            <span class="hour">3:00</span>
+                            <span class="light">PM</span>
+                        </td>
+                        <td class="plan__table--meal plan__table--monday03pm">
+                            <span class="plan__table--meal-text">
+                                Bod•ē Burn <br/>with Mozzarella and Tomato Slices
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark" style="display: block">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--tuesday03pm">
+                            <span class="plan__table--meal-text">
+                                Bod•ē Burn with Mozzarella and Tomato Slices
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+
+                        </td>
+
+                        <td class="plan__table--meal plan__table--wednesday03pm">
+                            <span class="plan__table--meal-text">
+                                Bod•ē Burn and Whole-Wheat English Muffin Butter Spray
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--thursday03pm">
+                            <span class="plan__table--meal-text">
+                                Bod•ē Burn with Mozzarella and Tomato Slices
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--friday03pm">
+                            <span class="plan__table--meal-text">
+                                    Bod•ē Burn with Mozzarella and Tomato Slices
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--saturday03pm">
+                            <span class="plan__table--meal-text">
+                                Bod•ē Burn and Whole-Wheat English Muffin Butter Spray
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+                    </tr>
+                    <!-- end - 5th row     -->
+<!-- -->
+                    <!-- start - 6th row -->
+                    <tr>
+                        <td class="plan__table--06pm">
+                            <span class="hour">6:00</span>
+                            <span class="light">PM</span>
+                        </td>
+                        <td class="plan__table--meal plan__table--monday06pm">
+                            <span class="plan__table--meal-text">
+                               Turkey Melt
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--tuesday06pm">
+                            <span class="plan__table--meal-text">
+                                Turkey Melt
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--wednesday06pm">
+                            <span class="plan__table--meal-text">
+                                Garlic Lime Chicken (HC)
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--thursday06pm">
+                            <span class="plan__table--meal-text">
+                                Turkey Melt
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--friday06pm">
+                            <span class="plan__table--meal-text">
+                                Turkey Melt
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+
+                        <td class="plan__table--meal plan__table--saturday06pm">
+                            <span class="plan__table--meal-text">
+                                Garlic Lime Chicken (HC)
+                            </span>
+
+                            <img class="plan__table--meal-eaten" src="img/meal-done.png" alt="meal eaten mark">
+                        </td>
+                    </tr>
+                    <!-- end - 6th row -->
+<!-- -->
+                    <!-- start - 7th row -->
+                    <tr>
+                        <td class=" plan__table--carb plan__table--carb-empty"> </td>
+
+                        <td class="plan__table--carb plan__table--carb-monday">
+                            low-carb
+                        </td>
+
+                        <td class="plan__table--carb plan__table--carb-tuesday">
+                            low-carb
+                        </td>
+
+                        <td class="plan__table--carb plan__table--carb-wednesday">
+                            high-carb
+                        </td>
+
+                        <td class="plan__table--carb plan__table--carb-thursday">
+                            low-carb
+                        </td>
+
+                        <td class="plan__table--carb plan__table--carb-friday">
+                            low-carb
+                        </td>
+
+                        <td class="plan__table--carb plan__table--carb-saturday">
+                            high-carb
+                        </td>
+
+                        <td rowspan="2" class="plan__table--carb plan__table--carb-print">
+
+                        </td>
+                    </tr>
+                    <!-- end - 7th row -->
+<!-- -->
+                    <!-- start - 8th row -->
+                    <tr>
+                        <td class="plan__table--workout plan__table--workout-first">
+                            Workout <i class="fas fa-caret-right"></i>
+                        </td>
+
+                        <td class="plan__table--workout plan__table--workout-monday"
+                        style="background-image:url(img/workout-active.png);"></td>
+
+                        <td class="plan__table--workout plan__table--workout-tuesday" style="background-image:url(img/workout-active.png);"></td>
+
+                        <td class="plan__table--workout plan__table--workout-wednesday"></td>
+
+                        <td class="plan__table--workout plan__table--workout-thursday"></td>
+
+                        <td class="plan__table--workout plan__table--workout-friday"></td>
+
+                        <td class="plan__table--workout plan__table--workout-saturday"></td>
+                    </tr>
+                    <!-- end - 8th row -->
+<!-- -->
+                </table>
+            </div>
+        </div>
+    </main>
+<!--  -->
+    <section class="boxes-alt">
+        <div class="boxes-alt__container">
+            <div class="boxes-alt__box boxes-alt__box--1">
+                <h3 class="boxes-alt__header">
+                    Running out of products?
+                </h3>
+
+                <p class="boxes-alt__info">
+                    Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.
+                </p>
+
+                <button class="boxes-alt__button">
+                    <span>Buy now</span> <img src="img/arrow.png" alt="arrow">
+                </button>
+            </div>
+
+            <div class="boxes-alt__box boxes-alt__box--2">
+                <h3 class="boxes-alt__header">
+                    Bod·<span class="e-font">e</span> Trainer in your pocket
+                </h3>
+
+                <p class="boxes-alt__info">
+                    Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.
+                </p>
+
+                <button class="boxes-alt__button">
+                    <i class="fab fa-apple"></i> <span>iOS</span> <img src="img/arrow.png" alt="arrow">
+                </button>
+                <button class="boxes-alt__button">
+                    <i class="fab fa-android"></i> <span>Android</span> <img src="img/arrow.png" alt="arrow">
+                </button>
+
+            </div>
+
+
+            <div class="boxes-alt__box boxes-alt__box--3">
+                <h3 class="boxes-alt__header">
+                    Frequently Asked Questions
+                </h3>
+
+                <p class="boxes-alt__info">
+                    Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.
+                </p>
+
+                <button class="boxes-alt__button">
+                        <span>Read FAQs</span> <img src="img/arrow.png" alt="arrow">
+                </button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

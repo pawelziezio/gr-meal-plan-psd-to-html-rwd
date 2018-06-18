@@ -1,0 +1,211 @@
+.plan{
+    background-color:#f9f9f9;
+}
+
+.plan__container{
+    max-width:$width;
+    margin:auto;
+}
+
+.plan__header{
+display:flex;
+justify-content:space-between;
+padding-top: 28px;
+}
+
+.plan__progress--header{
+    color: #bdbdbd;
+    font-family: HelveticaNeueLTStdRoman, Helvetica, sans-serif;
+    font-size: 9px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-top: 2px;
+    letter-spacing:.7px;
+}
+
+.plan__progress{
+    ul{
+        opacity: 0.55;
+        color: #828282;
+        font-family: HelveticaNeueLTStdRoman, Helvetica, sans-serif;
+        font-size: 9px;
+        line-height: 16px;
+        padding-top:11px;
+        display: flex;
+        margin-left:-10px
+    }
+}
+
+.plan__progress--week{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    width:20px;
+    height: 40px;
+}
+
+.plan__progress--week{
+    background-image:url(../../img/circle+line.png);
+    background-repeat:no-repeat;
+    background-position: 0% 0%;
+    position: relative;
+    z-index: 9;
+}
+
+.plan__progress--first-week{
+    background-image:url(../../img/circle.png);
+    background-repeat:no-repeat;
+    background-position: 100% 0%;
+}
+
+.plan__week-info{
+    padding-top: 9px;
+    display: flex;
+
+}
+
+.plan__week-nr{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    width: 249px;
+    color: #ff801a;
+    font-family:HelveticaNeueLTStdRoman, Helvetica, sans-serif;
+    font-size: 48px;
+    line-height: 46px;
+    margin-top:-3px;
+    // margin-left:26px;
+    // margin-right:23px;
+
+}
+
+.plan__week-nr--active{
+    display:inline-block;
+    width: 40px;
+    text-align:center;
+}
+
+.plan__button{
+    width: 24px;
+    height: 42px;
+    border: 1px solid #c0c0c0;
+    background-color: #f9f9f9;
+    border-radius:4px;
+    cursor: pointer;
+    transition:all.2s;
+    &:hover{
+        background:	#F0F0F0;
+    }
+}
+
+.plan__options{
+    padding-top: 6px;
+    ul{
+        display:flex;
+        padding-top:4px;
+    }
+}
+
+.plan__options--header{
+    color: #bdbdbd;
+    font-family: HelveticaNeueLTStdRoman, Helvetica, sans-serif;
+    font-size: 9px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-left:10px;
+    letter-spacing:.7px;
+}
+
+.plan__options--button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px){
+    .plan__header{
+        margin-left:24px;
+        margin-right: 24px;
+    }
+}
+@media screen and (max-width: 900px){
+    .plan__week-nr{
+        width: 220px;
+    }
+}
+@media screen and (max-width: 890px){
+    .plan__header{
+        justify-content:space-around;
+        flex-flow: row wrap;
+    }
+    .plan__progress{
+        flex: 1 1 50%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        padding-top:30px;
+        padding-right:20px;
+        padding-bottom: 10px;
+    }
+    .plan__week-info{
+        flex: 1 1 100%;
+        order: 1;
+        display: flex;
+        justify-content:center;
+        .plan__week-nr{
+            width: 320px;
+        }
+    }
+    .plan__options{
+        flex: 1 1 50%;
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding-top:30px;
+        padding-left: 20px;
+        padding-bottom:10px;
+    }
+}
+@media screen and (max-width: 605px){
+    .plan__progress{
+        flex: 1 1 100%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top:20px;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .plan__week-info{
+        flex: 1 1 100%;
+        order: 1;
+        display: flex;
+        justify-content:center;
+        .plan__week-nr{
+            width: 320px;
+        }
+    }
+    .plan__options{
+        flex: 1 1 100%;
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top:10px;
+        padding-left: 0;
+        padding-bottom:10px;
+    }
+}
+@media screen and (max-width: 440px){
+    .plan__week-info{
+        width: 120px;
+        h4{
+            font-size: 2em;
+        }
+    }
+
+}

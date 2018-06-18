@@ -1,0 +1,32 @@
+$nav--height:79px;
+$width: 978px;
+$fontcolor: #7c7c7c;
+$fontcolor-activ: #ff801a;
+$bordercolor-hor: #dcdcdc;
+$bordercolor-ver: #dcdcdc;
+
+.dot{
+    font-size:10px ;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.hour{
+    font-family: "Nunito", Arial, Helvetica, sans-serif;;
+    font-weight: 700;
+    font-style: 20px;
+    color: #828282;
+    font-size: 13px;
+}
+
+.light{
+    font-family: "Nunito", Arial, Helvetica, sans-serif;;
+    color:#828282;
+    font-size: 12px;
+}
+
+*{
+    box-sizing: border-box;
+}
